@@ -1,6 +1,9 @@
 pipeline:
   mytask:
-    image: Dockerfile
+    build:
+      context: .
+      container_name: newins
+      dockerfile: Dockerfile
     commands:
       - docker login -u reoltech -p Reolus@123
       - docker push reoltech/newbull
