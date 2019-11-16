@@ -6,4 +6,4 @@ steps:
   image: node:6.11.5
   commands:
   - npm install
-  
+  - npm start
