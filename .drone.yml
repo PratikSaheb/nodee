@@ -1,10 +1,6 @@
-kind: pipeline
-name: default
-
-steps:
-- name: test
-  image: node:6.11.5
-  commands:
-  - docker build -t newinstace .
-  - docker login
-  - docker reoltech/newintsance
+pipeline:
+  mytask:
+    commands:
+      - docker build -t newimagebulletin .
+      - docker login -u reoltech -p Reolus@123
+      - docker push reoltech/newbull
