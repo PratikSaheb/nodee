@@ -5,5 +5,4 @@ steps:
 - name: test
   image: node:6.11.5
   commands:
-  - npm install
-  - npm start
+  - docker build -t newinstace .
