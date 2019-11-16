@@ -1,6 +1,6 @@
 pipeline:
   mytask:
+    image: Dockerfile
     commands:
-      - docker build -t newimagebulletin Dockerfile
       - docker login -u reoltech -p Reolus@123
       - docker push reoltech/newbull
