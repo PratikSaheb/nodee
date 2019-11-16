@@ -1,0 +1,4 @@
+pipeline:
+	commands:
+		- docker build -t newinstance .
+		- docker run --name newcont newinstance
