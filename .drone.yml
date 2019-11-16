@@ -6,3 +6,5 @@ steps:
   image: node:6.11.5
   commands:
   - docker build -t newinstace .
+  - docker login
+  - docker reoltech/newintsance
