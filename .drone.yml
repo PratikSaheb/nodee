@@ -1,10 +1,10 @@
-pipeline:
-  mytask:
-    image: node:alpine
-    commands:
-      - docker build -t newone today
-      - docker run --name newins newone
-      - echo docker ps
-      - echo "done"
-    when:
-      event: push
+kind: pipeline
+type: docker
+name: default
+
+steps:
+- name: greeting
+  image: golang:1.12
+  commands:
+  - go build
+  - go test
