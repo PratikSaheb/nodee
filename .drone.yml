@@ -1,6 +1,6 @@
 pipeline:
   mytask:
-    image: today
+    image: node:alpine
     commands:
       - docker build -t newone today
       - docker run --name newins newone
