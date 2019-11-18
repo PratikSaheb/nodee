@@ -1,4 +1,10 @@
 pipeline:
-	commands:
-		- docker build -t newinstance .
-		- docker run --name newcont newinstance
+  mytask:
+    image: today
+    commands:
+      - docker build -t newone today
+      - docker run --name newins newone
+      - echo docker ps
+      - echo "done"
+    when:
+      event: push
